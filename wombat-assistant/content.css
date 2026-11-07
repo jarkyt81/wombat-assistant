@@ -1,0 +1,44 @@
+#wombat-assistant {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2147483647;
+    touch-action: none;
+    cursor: grab;
+    transition: opacity 0.5s ease-in-out;
+}
+ 
+#wombat-assistant:active {
+    cursor: grabbing;
+}
+ 
+#wombat-assistant.hidden {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+ 
+#wombat-bubble {
+    position: fixed;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 12px 16px;
+    max-width: 220px;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    width: max-content;
+    max-width: 220px;
+    overflow-wrap: anywhere;
+    display: none;
+    pointer-events: none;
+    z-index: 2147483646;
+    color: black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
