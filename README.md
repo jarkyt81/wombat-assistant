@@ -16,19 +16,20 @@ Wombat-Assistant is a Chrome extension paired with a local Flask server. It help
 ## Project Structure
 
 ```text
-wombat-assistant/
-├── images/
-│   ├── wombat-idle.png       # Idle avatar
-│   ├── wombat-talk.png       # Talking animation frame
-│   └── wombat-blink.png      # Blinking animation frame
-├── manifest.json             # Extension configuration and permissions
-├── content.js                # Page interactions and avatar behavior
-├── content.css               # Avatar and speech-bubble styles
-├── background.js             # Context-menu setup and message handling
-├── bootstrap.min.css         # Bootstrap styles
-├── backend/
-│   ├── app.py                # Flask API, Groq requests, and database operations
-│   └── database.db           # Local SQLite database (Wombat Q&A)
+repository/
+├── wombat-assistant/
+│   ├── images/
+│   │   ├── wombat-idle.png       # Idle avatar
+│   │   ├── wombat-talk.png       # Talking animation frame
+│   │   └── wombat-blink.png      # Blinking animation frame
+│   ├── manifest.json             # Extension configuration and permissions
+│   ├── content.js                # Page interactions and avatar behavior
+│   ├── content.css               # Avatar and speech-bubble styles
+│   ├── background.js             # Context-menu setup and message handling
+│   ├── bootstrap.min.css         # Bootstrap styles
+│   └── backend/
+│       ├── app.py                # Flask API, Groq requests, and database operations
+│       └── database.db           # Local SQLite database (Wombat Q&A) (You need to create it before running the backend)
 └── README.md
 ```
 
